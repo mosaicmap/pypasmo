@@ -8,7 +8,7 @@ build/
 # personal notes for Claude Code (Czech), only local
 CLAUDE.local.md
 doc_devel_cs/
-!_zip_archive/
+\!_zip_archive/
 _tmp/
 _todo.txt
 .claude/

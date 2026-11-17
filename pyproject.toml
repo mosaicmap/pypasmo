@@ -28,9 +28,11 @@ classifiers = [
 dependencies = []                        # nothing, only the standard library
 
 [project.urls]
+Homepage = "https://github.com/mosaicmap/pypasmo"
+Documentation = "https://github.com/mosaicmap/pypasmo/blob/master/doc/index.md"
+Issues = "https://github.com/mosaicmap/pypasmo/issues"
 "Original Pasmo" = "https://pasmo.speccy.org/"
 "Pasmo documentation" = "https://pasmo.speccy.org/pasmodoc.html"
-# Homepage = "https://github.com/<user>/pypasmo"
 
 # Command installed by pip: running "pypasmo" calls the function cli() in pypasmo/cli.py
 [project.scripts]
