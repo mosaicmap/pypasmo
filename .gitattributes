@@ -1,0 +1,21 @@
+# Line endings in the repository: shell scripts must keep LF, Windows scripts CRLF.
+* text=auto
+*.sh text eol=lf
+*.cmd text eol=crlf
+# Scripts with a shebang (#!/usr/bin/env python3) and the tools must keep LF on every
+# system, else Linux reads the interpreter as "python3\r"
+run_pypasmo.py text eol=lf
+tests/run_tests.py text eol=lf
+tools/**/*.py text eol=lf
+# The example sources of the output formats are LF
+tests/output_formats/**/*.asm text eol=lf
+# Pasmo test files and expected results are compared byte for byte
+*.check binary
+*.bin binary
+*.tap binary
+*.tzx binary
+*.sna binary
+# The ready example files (tests compare them byte for byte); listed after "*.cmd" so
+# that the TRS-80 /CMD file hello_trs80.cmd is not taken as a Windows script
+tests/output_formats/*_results/** binary
+*.pyz binary

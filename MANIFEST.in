@@ -1,0 +1,7 @@
+# Extra files for the source distribution (sdist): the same content as the release .zip
+# (tools/make_release.py checks it); tools/ is not in it. pypasmo/, README.md,
+# pyproject.toml and the license files are included anyway.
+include run_pypasmo.py
+graft doc
+graft tests
+global-exclude __pycache__ *.py[cod]

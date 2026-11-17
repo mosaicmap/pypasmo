@@ -1,0 +1,48 @@
+# Package description for pip and other Python tools (PEP 517, PEP 621, PEP 639).
+
+# --- How to build the package -------------------------------------------------
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+# --- What the package is ------------------------------------------------------
+[project]
+name = "pypasmo"
+dynamic = ["version"]                    # taken from pypasmo.__version__, see below
+description = "Z80 assembler in pure Python, compatible with Pasmo 0.5.5"
+readme = "README.md"
+requires-python = ">=3.8"
+license = "GPL-3.0-only"
+license-files = ["LICENSE", "AUTHORS", "tests/pasmo_0.5.5_original_tests/COPYING", "tests/pasmo_0.5.5_original_tests/AUTHORS"]
+authors = [{ name = "Martin Pokorný" }]
+keywords = ["z80", "assembler", "pasmo", "zx spectrum", "amstrad cpc", "msx", "retrocomputing"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Assembly",
+    "Topic :: Software Development :: Assemblers",
+]
+dependencies = []                        # nothing, only the standard library
+
+[project.urls]
+"Original Pasmo" = "https://pasmo.speccy.org/"
+"Pasmo documentation" = "https://pasmo.speccy.org/pasmodoc.html"
+# Homepage = "https://github.com/<user>/pypasmo"
+
+# Command installed by pip: running "pypasmo" calls the function cli() in pypasmo/cli.py
+[project.scripts]
+pypasmo = "pypasmo.cli:cli"
+
+# --- Settings for setuptools ----------------------------------------------------
+[tool.setuptools]
+packages = ["pypasmo"]                   # the package is the folder pypasmo/
+
+[tool.setuptools.dynamic]
+version = { attr = "pypasmo.__version__" }
+
+# --- Settings for pytest (optional; unittest does not need any) ---------------
+[tool.pytest.ini_options]
+testpaths = ["tests"]

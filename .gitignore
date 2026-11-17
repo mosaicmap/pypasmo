@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+# created by "python -m build" and by virtual environments
+dist/
+build/
+*.egg-info/
+.venv/
+# personal notes for Claude Code (Czech), only local
+CLAUDE.local.md
+doc_devel_cs/
+!_zip_archive/
+_tmp/
+_todo.txt
+.claude/

@@ -1,0 +1,12 @@
+pypasmo (based on Pasmo 0.5.5):
+Martin Pokorný - author, maintainer
+Written with the help of Claude Opus 5.5
+
+Pasmo (the original assembler that pypasmo is derived from):
+by Julián Albo "NotFound" 
+https://pasmo.speccy.org/
+
+Pasmo 0.5.5.paged (Pasmo 0.5.5 fork)
+(the Spectrum 128K improvements: BANK, --tap128, --tapbas128, DG, DUP/EDUP, STRUCT/ENDS):
+by Jouni Korhonen (jounikor)
+https://github.com/jounikor/pasmo
