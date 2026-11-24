@@ -1,6 +1,6 @@
 # CLAUDE.md – pypasmo
 
-pypasmo is a Z80 assembler in pure Python (standard library only, Python >= 3.8). It is a
+pypasmo is a Z80 assembler in pure Python (standard library only, Python >= 3.10). It is a
 port of the **Pasmo 0.5.5** assembler (C++) with the extensions of the fork Pasmo
 0.5.5.paged (`DG`, `DUP/EDUP`, `STRUCT/ENDS`, `BANK`, 128K tapes) and its own additions:
 output formats for many Z80 machines, a few directives, listings with T-states, debug

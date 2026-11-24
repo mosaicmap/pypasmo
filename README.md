@@ -15,7 +15,7 @@ Documentation: **[doc/index.md](doc/index.md)**.
 
 ## Install and run
 
-Python 3.8 or newer, nothing else. In the project folder, without installing:
+Python 3.10 or newer, nothing else. In the project folder, without installing:
 
 ```
 python -m pypasmo [options] input.asm output.bin [symbols.txt [publics.txt]]

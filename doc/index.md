@@ -85,10 +85,9 @@ All of it is marked *(pypasmo extension)* in this documentation.
 
 ## Requirements
 
-- **Python 3.8 or newer**, nothing else (no packages to install). Tested on Python 3.14.
-  pypasmo itself uses nothing newer than Python 3.6 (f-strings), so it will probably
-  run on 3.6 and 3.7 too; the tests need 3.8. Python 3.4 (the last one for Windows XP)
-  is not supported.
+- **Python 3.10 or newer**, nothing else (no packages to install). Tested on Python 3.14
+  and 3.10. Older versions are not supported (Python 3.9 and older are more than five years
+  old and get no more updates).
 - The assembler is the Python package in the folder `pypasmo/`. Three ways to run it:
   - `python -m pypasmo ...` in the project folder (the folder that contains `pypasmo/`);
   - `python run_pypasmo.py ...`, a small start script in the project folder (it can

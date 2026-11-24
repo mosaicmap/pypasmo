@@ -11,7 +11,7 @@ name = "pypasmo"
 dynamic = ["version"]                    # taken from pypasmo.__version__, see below
 description = "Z80 assembler in pure Python, compatible with Pasmo 0.5.5"
 readme = "README.md"
-requires-python = ">=3.8"
+requires-python = ">=3.10"
 license = "GPL-3.0-only"
 license-files = ["LICENSE", "AUTHORS", "tests/pasmo_0.5.5_original_tests/COPYING", "tests/pasmo_0.5.5_original_tests/AUTHORS"]
 authors = [{ name = "Martin Pokorný" }]
